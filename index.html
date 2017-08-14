@@ -1,0 +1,111 @@
+
+<html> 
+<head>
+	<link type="text/css" rel="stylesheet" href="main.css" />
+<title> ME </title>
+<script>
+	function banner(){ 
+var text = confirm("Did You Really Want to Click on My Banner?"); 
+return text; 
+} 
+
+function answer(){
+var radio = document.getElementsByName("trivia"); 
+var selection = false; 
+var message = "";
+
+
+for( var i = 0; i < radio.length; i++) { 
+if(radio[i].value == "Teemo" && radio[i].checked == true) { 
+selection = true; 
+} //end if statement 
+} //end for loop
+
+
+
+if(selection == true) {
+message = message + "<b><p style='color:green'>Good Job!</p></b>"; 
+} else { 
+message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+}
+document.getElementById("response").innerHTML = message;
+}//end function answer
+</script>
+
+
+
+
+
+</head> 
+<body id="background"> 
+	<a href="https://www.youtube.com" onclick="return banner()"><header id="header"> Youtube </header></a>
+
+
+	<nav> 
+		<ul id="navmenu">
+			<li> <a href="index.html"> Home </a> </li>
+			<li> <a href="games.html"> Games </a> </li>
+			<li> <a href="videos.html"> Videos </a> </li>
+		</ul>	
+	</nav>
+
+	<div id="rightside">
+		<div class="wrap-list">
+	<ol>
+		<li class="listitem"> teemo is annoying </li>
+		<li class="listitem"> teemo is annoying</li>
+		<li class="listitem"> teemo is annoying </li>
+	</ol> 
+		</div>
+
+	</div>
+
+	<div id="leftside">
+
+
+
+
+		
+	<h1> Tjay </h1>
+		<p><b>Tjay</b> I live in Melbourne, Florida and i am homeschooled. I enjoy doing <u>jiu jitsu</u>. I play video games. league of legends and rainbow six siege are my favorites. 
+	</p>
+
+	</div>
+
+
+
+
+	
+
+<div class+"wrap-trivia">
+<h2> League of Legends trivia </h2>
+		<p class="paragraph"> Who is the Most <span class="wrap-text"> annoying </span> character in League of Legends?</p>
+<form>
+	<div id="response"></div>
+		<input type="radio" name="trivia" value="Fizz"> Fizz <br>
+	<input type="radio" name="trivia" value="Veigar"> Veigar <br>
+	<input type="radio" name="trivia" value="Teemo"> Teemo <br>
+	<input type="radio" name="trivia" value="Cho'Gath"> Cho'Gath <br>
+	<input type="button" id="submit" value="Click Here" onclick="answer()">
+</form>
+</div>
+
+ 
+<img src="https://images2.alphacoders.com/611/thumb-1920-611981.jpg" />
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD4t497Z2uGxXMW0_FfKIwnHO32mQCda1icUsECgz0V2l4vRz4"
+<hr>
+<!-
+<center> TJAY <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSycdd7xmkTGQkuQjmIiYYHwcAj1mKVsbFP4LEDot70ZUBz0yBm"> Teemo</a> </center> 
+
+<iframe width="560" height="315"
+ src="https://www.youtube.com/embed/PNYHFluhOGI" 
+ frameborder="0" allowfullscreen>
+</iframe>
+
+
+
+
+
+<footer> TJAY </footer>
+</body> 
+</html>
